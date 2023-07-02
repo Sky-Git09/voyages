@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
+    <title>Document</title>
+</head>
+<body>
+    <!--Header Section Strats-->
+    <header class="header" id="header">
+        <a href="#" class="logo"><i class="fa-solid fa-plane-departure"></i> Voyages</a>
+
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#services">Services</a>
+            <div class="few-more">
+                <a href="#offerings" id="few">Offerings</a>
+                <div class="extra">
+                    <a href="#escapes" class="ii">Best Escapes</a>
+                    <a href="#indian-escapes" class="ii">Best in India</a>
+                    <a href="#" class="ii">Best in Asia</a>
+                    <a href="#" class="ii">Islad Escapes</a>
+                </div>
+            </div>
+            <a href="#book">Book</a>
+            <a href="#gallary">Gallary</a>
+            <a href="#review">Review</a>
+        </nav>
+
+        <div class="icons">
+            <div class="fa-solid fa-bars" id="menu-btn"></div>
+            <div class="fa-solid fa-user" id="user-btn"></div>
+            <div class="fa-solid fa-magnifying-glass" id="search-btn"></div>
+            <div class="fa-solid fa-cart-shopping" id="cart-btn"></div>
+            <div class="fa-solid fa-heart" id="favourite-btn"></div>
+        </div>
+
+        <form action="" class="search-form">
+            <input type="search" id="search-box" placeholder="Search here...." list="list">
+            <label for="search-box" class="fa-solid fa-microphone" id="mic-btn"></label>
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+            <datalist id="list">
+                <option value="html">html</option>
+                <option value="css">css</option>
+                <option value="js">js</option>
+                <option value="angular">angular</option>
+                <option value="react">react</option>
+                <option value="next">next</option>
+            </datalist>
+        </form>
+
+        <div class="shopping-cart">
+            <div class="box">
+                <i class="fa-solid fa-trash"></i>
+                <div class="cart-pic">
+                    <img src="images/photo-1598091383021-15ddea10925d.jpeg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Kashmir trip</h3>
+                    <span class="detail1">5th - 12th dec</span>
+                    <br>
+                    <span class="detail2">people : 4</span>
+                    <br>
+                    <span class="detail2">Rs. 55,000/-</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-trash"></i>
+                <div class="cart-pic">
+                    <img src="images/1339694.webp" alt="">
+                </div>
+                <div class="content">
+                    <h3>London trip</h3>
+                    <span class="detail1">5th - 12th dec</span>
+                    <br>
+                    <span class="detail2">people : 4</span>
+                    <br>
+                    <span class="detail2">Rs. 250000/-</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-trash"></i>
+                <div class="cart-pic">
+                    <img src="images/thumb-1920-1108495.png" alt="">
+                </div>
+                <div class="content">
+                    <h3>Dubai trip</h3>
+                    <span class="detail1">5th - 12th dec</span>
+                    <br>
+                    <span class="detail2">people : 4</span>
+                    <br>
+                    <span class="detail2">Rs. 89000/-</span>
+                </div>
+            </div>
+            <div class="box">
+                <i class="fa-solid fa-trash"></i>
+                <div class="cart-pic">
+                    <img src="images/5bd33b3230b20-wallpaper-preview.jpg" alt="">
+                </div>
+                <div class="content">
+                    <h3>Thailand trip</h3>
+                    <span class="detail1">5th - 12th dec</span>
+                    <br>
+                    <span class="detail2">people : 4</span>
+                    <br>
+                    <span class="detail2">Rs. 150000/-</span>
+                </div>
+            </div>
+            <div class="total">total : 5,44,000/-</div>
+            <a href="#" class="btn btn1">Book Trip</a>
+        </div>
+    </header>
+
+    <!--Login-registration form-->
+    <div class="log-popup">
+        <div class="container logform">
+            <div class="row main mt-5">
+    
+                <!--registration starts-->
+                <div class="col-md-6 p-5" id="signup">
+                    <h1 class="display-4 text-center">Sign Up</h1>
+                    <form action="" class="d-flex justify-content-center mt-4">
+                        <div class="this w-75">
+                            <div class="input-container">
+                                <input type="email" name="email" class="input" required>
+                                <label for="">Email</label>
+                                <span>Email Id</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="password" name="password" class="input" required id="pass">
+                                <label for="">Password</label>
+                                <span>Password</span>
+                                <i class="fa-solid fa-eye" id="eye" onclick="show()"></i>
+                                <i class="fa-solid fa-eye-slash" id="eye-slash" onclick="show()"></i>
+                            </div>
+                            <div class="input-container">
+                                <input type="password" name="cpassword" class="input" required id="cpass">
+                                <label for="">Confirm Password</label>
+                                <span>Confirm Password</span>
+                                <i class="fa-solid fa-eye" id="eye1" onclick="showo()"></i>
+                                <i class="fa-solid fa-eye-slash" id="eye-slash1" onclick="showo()"></i>
+                            </div>
+                            <button type="submit">Register</button>
+                            <div class="link d-flex justify-content-between mt-5">
+                                <p class="links" id="login-link">Already have an account?</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--registration ends-->
+    
+                <!--login starts-->
+                <div class="col-md-6 p-5" id="login">
+                    <h1 class="display-4 text-center">Login</h1>
+                    <form action="" class="d-flex justify-content-center mt-4">
+                        <div class="w-75">
+                            <div class="input-container">
+                                <input type="email" name="email" class="input" required>
+                                <label for="">Email</label>
+                                <span>Email Id</span>
+                            </div>
+                            <div class="input-container">
+                                <input type="password" name="password" class="input" required id="logpass">
+                                <label for="">Password</label>
+                                <span>Password</span>
+                                <i class="fa-solid fa-eye" id="eye2" onclick="showi()"></i>
+                                <i class="fa-solid fa-eye-slash" id="eye-slash2" onclick="showi()"></i>
+                            </div>
+                            <button type="submit">Login</button>
+                            <div class="link d-flex justify-content-between mt-5">
+                                <p class="links" id="register-link">Already have an account?</p>
+                                <p class="links">Forget Password?</p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <!--login ends-->
+                <div class="overlay" id="overlay">
+                    <img src="images/thumb-1920-1108495.png" alt="">
+                </div>
+            </div>
+            <i class="fa-sharp fa-solid fa-circle-xmark" id="close-login"></i>
+        </div>
+       
+    </div>
+    <!--Login-registration form-->
+
+    <!--Header Section Ends-->
+
+    <!--Home section starts-->
+    <section class="home" id="home">
+        <video src="video5 - Trim.mp4" class="video-slide active" autoplay muted loop></video>
+        <video src="video2.mp4" class="video-slide" autoplay muted loop></video>
+        <video src="video3.mp4" class="video-slide" autoplay muted loop></video>
+        <video src="video4.mp4s" class="video-slide" autoplay muted loop></video>
+        <video src="video1.mp4" class="video-slide" autoplay muted loop></video>
+        
+        <div class="content active">
+            <h1>Voyages</h1>
+            <span class="multi-text"></span>
+            <p class="smalltxt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit dolorem odio ipsum magni quisquam nobis nemo, 
+                ab asperiores voluptatem hic minus corporis repellat alias. Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                 Id culpa aperiam laudantium fugit ipsa quas aliquam. Velit ipsum voluptatem enim doloremque quia odit nihil! Lorem ipsum 
+                 dolor sit amet consectetur adipisicing elit. Sunt nobis ullam nulla dicta eaque, pariatur ratione magni excepturi vero 
+                 voluptates maiores dignissimos ipsum ab. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quia aliquam voluptates 
+                 atque maiores officia explicabo quas exercitationem! Ipsam, voluptate? Lorem ipsum dolor sit amet consectetur adipisicing 
+                 elit. Nihil illo necessitatibus officiis beatae repellendus quas? Veritatis sint soluta ullam ipsa in quisquam, aut tenetur 
+                 sapiente exercitationem distinctio, commodi quis sequi iusto nemo earum. Rerum, accusantium?
+                <span class="read-more">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit maxime animi ipsa id. Eaque rerum, sapiente, enim aut, 
+                    molestiae quaerat voluptates alias maxime ipsam nemo animi nesciunt illum harum consequuntur qui laudantium nam 
+                    architecto asperiores doloribus porro ex ipsum minima sed. Magnam maxime, ipsum ullam neque error provident ducimus 
+                    facilis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem in non quas voluptatem neque illum at 
+                    sed earum est ipsam natus harum, modi praesentium maiores ratione provident suscipit, voluptate facilis. Lorem ipsum 
+                    dolor sit amet consectetur adipisicing elit. Inventore, nulla facilis at facere voluptate vitae qui et quaerat suscipit 
+                    vel nostrum tempore maiores temporibus consectetur modi voluptatem. Commodi, molestias fugiat!
+                </span>
+            </p>
+            <span class="read-btn" id="read-btn">Read more</span>
+        </div>
+      
+        <div class="media-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+        <div class="slider-navigation">
+            <div class="nav-btn active"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+            <div class="nav-btn"></div>
+        </div>
+    </section>
+    <!--Home section ends-->
+
+        
+    <!--Service section Starts-->
+    <section class="services" aria-label="service" id="services">
+        <h1 class="heading">Things <span>We Serve</span></h1>
+        <section class="card-wrap">
+            <div class="container ser">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 service_column">
+                        <div class="service_box h-100">
+                            <div class="service_inner text-center text-decoration-none h-100">
+                                <div class="thumbnail d-inline-block">
+                                    <i class="fa-solid fa-earth-americas earth"></i>
+                                </div>
+                                <h2 class="title">All Over World</h2>
+                                <p class="f1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eaque ipsum, 
+                                    cupiditate perspiciatis eos quisquam optio culpa iusto quam aperiam autem tempora 
+                                    exercitationem earum. <span class="read-more">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                    Repudiandae assumenda autem ad error dolorem quasi fuga, cum impedit, corporis harum perferendis.
+                                    </span>
+                                </p>
+                                <span class="view_more_btn mt-auto" id="view1">
+                                    <!--<i class="fa-solid fa-plus" id="plus1"></i>-->
+                                    Know More
+                                </span>
+                            </div>
+                            <div class="service_bg"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 service_column">
+                        <div class="service_box h-100" id="mid">
+                            <div class="service_inner text-center text-decoration-none h-100">
+                                <div class="thumbnail d-inline-block">
+                                    <i class="fa-sharp fa-solid fa-tags earth"></i>
+                                </div>
+                                <h2 class="title">Affordable Prices</h2>
+                                <p class="f2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eaque ipsum, 
+                                    cupiditate perspiciatis eos quisquam optio culpa iusto quam aperiam autem tempora 
+                                    exercitationem earum.<span class="read-more2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Repudiandae assumenda autem ad error dolorem quasi fuga, cum impedit, corporis harum perferendis.
+                                        </span>
+                                </p>
+                                <span class="view_more_btn mt-auto" id="view2">
+                                    <!--<i class="fa-solid fa-plus"></i>-->
+                                    Know More
+                                </span>
+                            </div>
+                            <div class="service_bg"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 service_column">
+                        <div class="service_box h-100">
+                            <div class="service_inner text-center text-decoration-none h-100">
+                                <div class="thumbnail d-inline-block">
+                                    <i class="fa-sharp fa-solid fa-handshake earth"></i>
+                                </div>
+                                <h2 class="title">Best Guids</h2>
+                                <p class="f3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eaque ipsum, 
+                                    cupiditate perspiciatis eos quisquam optio culpa iusto quam aperiam autem tempora 
+                                    exercitationem earum.<span class="read-more3">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Repudiandae assumenda autem ad error dolorem quasi fuga, cum impedit, corporis harum perferendis.
+                                        </span>
+                                </p>
+                                <span class="view_more_btn mt-auto" id="view3">
+                                    <!--<i class="fa-solid fa-plus"></i>-->
+                                    Know More
+                                </span>
+                            </div>
+                            <div class="service_bg"></div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 service_column">
+                        <div class="service_box h-100">
+                            <div class="service_inner text-center text-decoration-none h-100">
+                                <div class="thumbnail d-inline-block">
+                                    <i class="fa-sharp fa-solid fa-wine-glass earth"></i>
+                                </div>
+                                <h2 class="title">Food & Drinks</h2>
+                                <p class="f4">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repudiandae eaque ipsum, 
+                                    cupiditate perspiciatis eos quisquam optio culpa iusto quam aperiam autem tempora 
+                                    exercitationem earum.<span class="read-more4">Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Repudiandae assumenda autem ad error dolorem quasi fuga, cum impedit, corporis harum perferendis.
+                                        </span>
+                                </p>
+                                <span class="view_more_btn mt-auto" id="view4">
+                                    <!--<i class="fa-solid fa-plus"></i>-->
+                                    Know More
+                                </span>
+                            </div>
+                            <div class="service_bg"></div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </section>
+        
+    </section>
+    <!--Services section ends-->
+
+
+    <!--Offerings section Starts-->
+    <section class="offerings" id="offerings">
+        <h1 class="heading">Our <span>Offered Trips</span></h1>
+        <section class="luxery-experience" id="escapes">
+           <div class="container grid-wrapper">
+               <div class="luxery-items no1">
+                   <div class="title-luxery">Best Luxery Escapes</div>
+                   <div class="content-luxery">
+                       <div class="luxery-letter">Find Best things to do across the globe</div>
+                       <a href="#book" class="book-btn">Book Now</a>
+                   </div>
+               </div>
+               <a href="#book" class="luxery-items no2">
+                    <img src="images/USA.jpg" alt="">
+                    <div class="luxery_item_title">USA</div>
+                </a>
+                <a href="#book" class="luxery-items no3">
+                    <img src="images/paris.jpg" alt="">
+                    <div class="luxery_item_title">Paris</div>
+                </a>
+                <a href="#book" class="luxery-items no4">
+                    <img src="images/thumb-1920-1108495.png" alt="">
+                    <div class="luxery_item_title">Dubai</div>
+                </a>
+                <a href="#book" class="luxery-items no5">
+                    <img src="images/189065.jpg" alt="">
+                    <div class="luxery_item_title">Singapore</div>
+                </a>
+                <a href="#book" class="luxery-items no6">
+                    <img src="images/Malaysia.jpg" alt="">
+                    <div class="luxery_item_title">Malaysia</div>
+                </a>
+                <a href="#book" class="luxery-items no7">
+                    <img src="images/Japan.jpg" alt="">
+                    <div class="luxery_item_title">Japan</div>
+                </a>
+                <a href="#book" class="luxery-items no8">
+                    <img src="images/Italy.jpg" alt="">
+                    <div class="luxery_item_title">Italy</div>                    
+                </a>
+                <a href="#book" class="luxery-items no9">
+                    <img src="images/Australia.jpg" alt="">
+                    <div class="luxery_item_title">Australia</div>                    
+                </a>
+                <a href="#book" class="luxery-items no10">
+                    <img src="images/5bd33b3230b20-wallpaper-preview.jpg" alt="">
+                    <div class="luxery_item_title">Thailand</div>                    
+                </a>
+                <a href="#book" class="luxery-items no11">
+                    <img src="images/1339694.webp" alt="">
+                    <div class="luxery_item_title">UK</div>                    
+                </a>
+           </div>
+        </section>
+
+        <section class="insian-escapes" id="indian-escapes">
+            <h1 class="indi-title">Best Excapes in India</h1>
+            <div class="container">
+                <div class="swiper card_slider">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/photo-1598091383021-15ddea10925d.jpeg" alt="">
+                                <div class="slider-title-ind">Kashmir</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/Mumbai.jpg" alt="">
+                                <div class="slider-title-ind">Mumbai</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/Delhi.jpg" alt="">
+                                <div class="slider-title-ind">Delhi</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/Kolkata.jpg" alt="">
+                                <div class="slider-title-ind">Kolkata</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/Rajasthan.avif" alt="">
+                                <div class="slider-title-ind">Rajasthan</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/Soouth India.jpg" alt="">
+                                <div class="slider-title-ind">South India</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/Vrindaban.jpg" alt="">
+                                <div class="slider-title-ind">Vrindaban</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/Benarash.jpg" alt="">
+                                <div class="slider-title-ind">Benarash</div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-imgbox">
+                                <img src="images/Ladakh.webp" alt="">
+                                <div class="slider-title-ind">Ladakh</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                </div>
+            </div>
+        </section>
+    </section>
+    
+    <!--Offerings section ends-->
+
+    <script src="script2.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

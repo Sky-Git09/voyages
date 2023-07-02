@@ -1,0 +1,7 @@
+/*offerings*/
+.bbtn{
+    z-index: 100000000000000;
+}
+.bbtn:hover{
+    color: rgb(255, 0, 0);
+}
